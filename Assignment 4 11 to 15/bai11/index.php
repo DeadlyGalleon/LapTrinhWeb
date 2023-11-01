@@ -5,7 +5,7 @@ $page = $_GET['page'];
 }else{
 $page = 1;
 }
-$limit = 4; // 3 title per page
+$limit = 4;
 $start = ($page - 1) * $limit;
 $total_title = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM tintuc"));
 $total_page = $total_title/$limit;
